@@ -50,3 +50,14 @@ def sum_array(summable_array)
     sum + el
   end
 end
+
+def add_s(singular_array)
+  singular_array.collect do |sing|
+    if sing == singular_array[1]
+      sing
+    else
+      sing + "s"
+    end
+  end
+end
+  
